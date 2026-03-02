@@ -29,12 +29,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
       changeFrequency: "monthly",
     },
-    {
-      url: `${base}/kontakt`,
-      lastModified: new Date(),
-      priority: 0.5,
-      changeFrequency: "monthly",
-    },
     // Branchen
     {
       url: `${base}/schlosserei-metallbau`,
@@ -146,25 +140,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       priority: 0.6,
       changeFrequency: "monthly",
-    },
-    // Legal
-    {
-      url: `${base}/datenschutz`,
-      lastModified: new Date(),
-      priority: 0.3,
-      changeFrequency: "yearly",
-    },
-    {
-      url: `${base}/impressum`,
-      lastModified: new Date(),
-      priority: 0.3,
-      changeFrequency: "yearly",
-    },
-    {
-      url: `${base}/agb`,
-      lastModified: new Date(),
-      priority: 0.3,
-      changeFrequency: "yearly",
     },
   ];
 }

@@ -1,8 +1,8 @@
 {
   "projektName": "auditready",
   "displayName": "AuditReady",
-  "domain": "auditready.de",
-  "appDomain": "app.auditready.de",
+  "domain": "werkseigene-produktionskontrolle.de",
+  "appDomain": "app.werkseigene-produktionskontrolle.de",
   "zielgruppe": "EN 1090-zertifizierte Metallbau/Stahlbau-Betriebe mit 10-100 MA im DACH-Raum",
   "problem": "Wochenlange Audit-Vorbereitung, Angst vor Zertifikatsverlust, WPK-System in Word/Excel/Papier",
   "loesung": "Digitales WPK-Cockpit mit automatischer Gap-Analyse, Compliance-Score und Ein-Klick Audit-Paket-Generator",

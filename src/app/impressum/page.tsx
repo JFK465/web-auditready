@@ -34,7 +34,7 @@ export default function ImpressumPage() {
             <h2 className="text-xl font-semibold text-foreground mb-3">
               Kontakt
             </h2>
-            <p>E-Mail: hallo@auditready.de</p>
+            <p>E-Mail: hallo@werkseigene-produktionskontrolle.de</p>
           </section>
           <section>
             <h2 className="text-xl font-semibold text-foreground mb-3">

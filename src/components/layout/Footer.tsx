@@ -76,8 +76,7 @@ export function Footer() {
               href="/"
               className="flex items-center gap-2 font-bold text-lg mb-4"
             >
-              <ShieldCheck className="h-5 w-5 text-primary" />
-              <span>AuditReady</span>
+              <img src="/logo-dark.svg" alt="AuditReady" className="h-6" />
             </Link>
             <p className="text-background/60 text-sm">
               Digitales WPK-Cockpit für EN 1090-zertifizierte

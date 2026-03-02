@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
-import { ChevronDown, Menu, X, ShieldCheck } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/lib/seo-config";
 
@@ -187,8 +187,8 @@ export function Navbar() {
           href="/"
           className="flex items-center gap-2 font-bold text-xl text-primary"
         >
-          <ShieldCheck className="h-6 w-6" />
-          <span>AuditReady</span>
+          <img src="/logo-icon.svg" alt="AuditReady" className="h-8 w-8" />
+          <span className="hidden sm:inline">AuditReady</span>
         </Link>
 
         {/* Desktop Navigation */}

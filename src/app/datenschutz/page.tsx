@@ -23,7 +23,8 @@ export default function DatenschutzPage() {
             </h2>
             <p>
               Verantwortlich für die Datenverarbeitung auf dieser Website ist
-              die AuditReady GmbH (in Gründung). Kontakt: hallo@auditready.de
+              die AuditReady GmbH (in Gründung). Kontakt:
+              hallo@werkseigene-produktionskontrolle.de
             </p>
           </section>
 
@@ -70,7 +71,8 @@ export default function DatenschutzPage() {
               Sie haben das Recht auf Auskunft, Berichtigung, Löschung und
               Einschränkung der Verarbeitung Ihrer personenbezogenen Daten sowie
               ein Widerspruchsrecht und Beschwerderecht bei der zuständigen
-              Datenschutzbehörde. Kontakt: hallo@auditready.de
+              Datenschutzbehörde. Kontakt:
+              hallo@werkseigene-produktionskontrolle.de
             </p>
           </section>
 
