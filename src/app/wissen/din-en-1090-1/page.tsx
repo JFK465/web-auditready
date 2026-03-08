@@ -259,11 +259,11 @@ export default function DinEn10901Page() {
                 },
                 {
                   label: "Ausführungsklassen EXC1-EXC4",
-                  href: "/wissen/ausfuehrungsklassen",
+                  href: "/wissen/ausführungsklassen",
                 },
                 {
                   label: "Überwachungsaudit verstehen",
-                  href: "/wissen/ueberwachungsaudit",
+                  href: "/wissen/überwachungsaudit",
                 },
                 {
                   label: "Kostenloser Compliance-Check",

@@ -250,7 +250,7 @@ export default function SchweisskoordinatorPage() {
                 },
                 {
                   label: "Überwachungsaudit",
-                  href: "/wissen/ueberwachungsaudit",
+                  href: "/wissen/überwachungsaudit",
                 },
                 { label: "DIN EN 1090-1", href: "/wissen/din-en-1090-1" },
               ].map((link) => (

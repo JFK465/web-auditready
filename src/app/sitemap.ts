@@ -74,7 +74,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
     },
     {
-      url: `${base}/wissen/ausfuehrungsklassen`,
+      url: `${base}/wissen/ausführungsklassen`,
       lastModified: new Date(),
       priority: 0.7,
       changeFrequency: "monthly",
@@ -92,7 +92,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
     },
     {
-      url: `${base}/wissen/ueberwachungsaudit`,
+      url: `${base}/wissen/überwachungsaudit`,
       lastModified: new Date(),
       priority: 0.7,
       changeFrequency: "monthly",
@@ -112,7 +112,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
     },
     {
-      url: `${base}/blog/en-1090-ueberwachungsaudit-checkliste`,
+      url: `${base}/blog/en-1090-überwachungsaudit-checkliste`,
       lastModified: new Date(),
       priority: 0.6,
       changeFrequency: "monthly",

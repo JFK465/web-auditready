@@ -741,7 +741,7 @@ function CrossLinksSection() {
     { label: "Aluminium & Fassadenbau", href: "/aluminium-fassadenbau" },
     { label: "DIN EN 1090-1 erklärt", href: "/wissen/din-en-1090-1" },
     { label: "WPK-Handbuch", href: "/wissen/wpk-handbuch" },
-    { label: "Ausführungsklassen EXC", href: "/wissen/ausfuehrungsklassen" },
+    { label: "Ausführungsklassen EXC", href: "/wissen/ausführungsklassen" },
     {
       label: "Audit-Bereitschafts-Check",
       href: "/tools/audit-bereitschafts-check",

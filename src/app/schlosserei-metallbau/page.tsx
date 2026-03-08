@@ -263,7 +263,7 @@ export default function SchlossereiMetallbauPage() {
               WPK-Handbuch Leitfaden
             </Link>
             <Link
-              href="/wissen/ausfuehrungsklassen"
+              href="/wissen/ausführungsklassen"
               className="hover:text-foreground underline-offset-4 hover:underline"
             >
               Ausführungsklassen EXC1-EXC4

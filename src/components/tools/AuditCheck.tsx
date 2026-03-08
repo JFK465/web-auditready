@@ -11,7 +11,7 @@ type AnswerValue =
   | "teilweise"
   | "keine"
   | "kleinere"
-  | "groessere"
+  | "größere"
   | "nachaudit";
 
 interface Question {
@@ -126,7 +126,7 @@ const questions: Question[] = [
     options: [
       { value: "keine", label: "Keine Mängel", points: 10 },
       { value: "kleinere", label: "Kleinere Mängel", points: 5 },
-      { value: "groessere", label: "Grössere Mängel", points: 0 },
+      { value: "größere", label: "Grössere Mängel", points: 0 },
       { value: "nachaudit", label: "Nachaudit notwendig", points: -5 },
     ],
   },

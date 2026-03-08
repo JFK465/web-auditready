@@ -13,16 +13,16 @@ export const metadata: Metadata = {
   title: "Das EN 1090-Überwachungsaudit: Ablauf, Prüfpunkte und Vorbereitung",
   description:
     "Wie läuft das EN 1090-Überwachungsaudit ab? Was prüft die Zertifizierungsstelle? Konkrete Vorbereitung und häufige Mängel erklärt.",
-  alternates: { canonical: `${siteConfig.url}/wissen/ueberwachungsaudit` },
+  alternates: { canonical: `${siteConfig.url}/wissen/überwachungsaudit` },
   openGraph: {
     title: "Das EN 1090-Überwachungsaudit: Ablauf, Prüfpunkte und Vorbereitung",
     description:
       "Vollständiger Leitfaden zum EN 1090-Überwachungsaudit — was geprüft wird, häufige Mängel und 4-Wochen-Checkliste.",
-    url: `${siteConfig.url}/wissen/ueberwachungsaudit`,
+    url: `${siteConfig.url}/wissen/überwachungsaudit`,
   },
 };
 
-const pruefpunkte = [
+const prüfpunkte = [
   {
     nr: "1",
     title: "WPK-Handbuch",
@@ -84,18 +84,18 @@ const vierWochenCheckliste = [
   "Audit-Paket vorbereiten: Alle Dokumente in strukturierter Reihenfolge bereitstellen",
 ];
 
-export default function UeberwachungsauditPage() {
+export default function ÜberwachungsauditPage() {
   return (
     <>
       <WebPageSchema
         title="Das EN 1090-Überwachungsaudit: Ablauf, Prüfpunkte und Vorbereitung"
         description="Leitfaden zum EN 1090-Überwachungsaudit — Ablauf, Prüfpunkte, häufige Mängel und Vorbereitung."
-        url="/wissen/ueberwachungsaudit"
+        url="/wissen/überwachungsaudit"
       />
       <BreadcrumbSchema
         items={[
           { label: "Wissen", href: "/wissen" },
-          { label: "Überwachungsaudit", href: "/wissen/ueberwachungsaudit" },
+          { label: "Überwachungsaudit", href: "/wissen/überwachungsaudit" },
         ]}
       />
 
@@ -103,7 +103,7 @@ export default function UeberwachungsauditPage() {
         <Breadcrumbs
           items={[
             { label: "Wissen", href: "/wissen" },
-            { label: "Überwachungsaudit", href: "/wissen/ueberwachungsaudit" },
+            { label: "Überwachungsaudit", href: "/wissen/überwachungsaudit" },
           ]}
         />
       </div>
@@ -177,7 +177,7 @@ export default function UeberwachungsauditPage() {
                 3. Die 8 Hauptprüfpunkte des Überwachungsaudits
               </h2>
               <div className="space-y-3">
-                {pruefpunkte.map((p) => (
+                {prüfpunkte.map((p) => (
                   <div
                     key={p.nr}
                     className="bg-muted/30 rounded-lg p-4 border border-border"
@@ -303,7 +303,7 @@ export default function UeberwachungsauditPage() {
                 },
                 {
                   label: "Ausführungsklassen EXC",
-                  href: "/wissen/ausfuehrungsklassen",
+                  href: "/wissen/ausführungsklassen",
                 },
                 { label: "WPK Software testen", href: "/wpk-software" },
               ].map((link) => (

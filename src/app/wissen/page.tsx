@@ -35,7 +35,7 @@ const articles = [
     title: "Ausführungsklassen EXC1 bis EXC4",
     description:
       "EXC1, EXC2, EXC3 oder EXC4 — welche Ausführungsklasse gilt für Ihren Betrieb? Anforderungen und praktische Konsequenzen erklärt.",
-    href: "/wissen/ausfuehrungsklassen",
+    href: "/wissen/ausführungsklassen",
     readTime: "7 Min.",
     tag: "Grundlagen",
   },
@@ -59,7 +59,7 @@ const articles = [
     title: "Das EN 1090-Überwachungsaudit",
     description:
       "Ablauf, Prüfpunkte und konkrete Vorbereitung auf das jährliche Überwachungsaudit. Was der Auditor wirklich prüft.",
-    href: "/wissen/ueberwachungsaudit",
+    href: "/wissen/überwachungsaudit",
     readTime: "10 Min.",
     tag: "Audit",
   },

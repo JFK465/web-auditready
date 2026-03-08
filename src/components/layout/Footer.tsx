@@ -153,7 +153,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/wissen/ausfuehrungsklassen"
+                  href="/wissen/ausführungsklassen"
                   className="hover:text-background transition-colors"
                 >
                   Ausführungsklassen

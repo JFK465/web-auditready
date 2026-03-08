@@ -260,7 +260,7 @@ export default function SubunternehmerStahlbauPage() {
           </Button>
           <div className="mt-6 flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
             <Link
-              href="/wissen/ueberwachungsaudit"
+              href="/wissen/überwachungsaudit"
               className="hover:text-foreground underline-offset-4 hover:underline"
             >
               Überwachungsaudit verstehen

@@ -148,7 +148,7 @@ const navItems: NavDropdown[] = [
       },
       {
         name: "Ausführungsklassen EXC1-EXC4",
-        href: "/wissen/ausfuehrungsklassen",
+        href: "/wissen/ausführungsklassen",
         description: "EXC1, EXC2, EXC3, EXC4",
       },
       {
@@ -163,7 +163,7 @@ const navItems: NavDropdown[] = [
       },
       {
         name: "Überwachungsaudit EN 1090",
-        href: "/wissen/ueberwachungsaudit",
+        href: "/wissen/überwachungsaudit",
         description: "Ablauf, Vorbereitung",
       },
       {

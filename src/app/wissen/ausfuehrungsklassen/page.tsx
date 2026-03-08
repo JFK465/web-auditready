@@ -13,27 +13,27 @@ export const metadata: Metadata = {
   title: "Ausführungsklassen EXC1 bis EXC4 nach EN 1090-2 erklärt",
   description:
     "EXC1, EXC2, EXC3 oder EXC4 — welche Ausführungsklasse gilt für Ihren Betrieb? Anforderungen, Unterschiede und praktische Konsequenzen erklärt.",
-  alternates: { canonical: `${siteConfig.url}/wissen/ausfuehrungsklassen` },
+  alternates: { canonical: `${siteConfig.url}/wissen/ausführungsklassen` },
   openGraph: {
     title: "Ausführungsklassen EXC1 bis EXC4 nach EN 1090-2 erklärt",
     description:
       "Vollständiger Leitfaden zu Ausführungsklassen EXC1-EXC4 nach EN 1090-2: Anforderungen, NDT-Quoten, WPS und Personalqualifikation.",
-    url: `${siteConfig.url}/wissen/ausfuehrungsklassen`,
+    url: `${siteConfig.url}/wissen/ausführungsklassen`,
   },
 };
 
-export default function AusfuehrungsklassenPage() {
+export default function AusführungsklassenPage() {
   return (
     <>
       <WebPageSchema
         title="Ausführungsklassen EXC1 bis EXC4 nach EN 1090-2 erklärt"
         description="Leitfaden zu Ausführungsklassen EXC1-EXC4 nach EN 1090-2 für Metallbau-Betriebe."
-        url="/wissen/ausfuehrungsklassen"
+        url="/wissen/ausführungsklassen"
       />
       <BreadcrumbSchema
         items={[
           { label: "Wissen", href: "/wissen" },
-          { label: "Ausführungsklassen", href: "/wissen/ausfuehrungsklassen" },
+          { label: "Ausführungsklassen", href: "/wissen/ausführungsklassen" },
         ]}
       />
 
@@ -43,7 +43,7 @@ export default function AusfuehrungsklassenPage() {
             { label: "Wissen", href: "/wissen" },
             {
               label: "Ausführungsklassen",
-              href: "/wissen/ausfuehrungsklassen",
+              href: "/wissen/ausführungsklassen",
             },
           ]}
         />
@@ -252,7 +252,7 @@ export default function AusfuehrungsklassenPage() {
                 },
                 {
                   label: "Überwachungsaudit",
-                  href: "/wissen/ueberwachungsaudit",
+                  href: "/wissen/überwachungsaudit",
                 },
                 {
                   label: "Für Schlossereien (EXC2)",

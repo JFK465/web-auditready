@@ -88,7 +88,7 @@ export function SEOContentSection() {
           <p className="text-muted-foreground leading-relaxed">
             Erfahren Sie mehr über die{" "}
             <Link
-              href="/wissen/ausfuehrungsklassen"
+              href="/wissen/ausführungsklassen"
               className="text-primary hover:underline"
             >
               Ausführungsklassen EXC1 bis EXC4
@@ -102,7 +102,7 @@ export function SEOContentSection() {
             </Link>{" "}
             und den{" "}
             <Link
-              href="/wissen/ueberwachungsaudit"
+              href="/wissen/überwachungsaudit"
               className="text-primary hover:underline"
             >
               Ablauf des EN 1090-Überwachungsaudits
