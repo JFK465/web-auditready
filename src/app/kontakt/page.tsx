@@ -1,172 +1,142 @@
-"use client";
+import { Metadata } from "next";
+import Link from "next/link";
+import { ContactForm } from "@/components/contact/ContactForm";
 
-import { useState } from "react";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
-import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import { Mail, Clock } from "lucide-react";
+const PRODUCT_NAME = "AuditReady";
+const PRODUCT_DOMAIN = "werkseigene-produktionskontrolle.de";
+const CONTACT_EMAIL = "info@werkseigene-produktionskontrolle.de";
 
-const contactSchema = z.object({
-  name: z.string().min(2, "Name muss mindestens 2 Zeichen haben"),
-  email: z.string().email("Bitte gültige E-Mail-Adresse eingeben"),
-  company: z.string().optional(),
-  message: z.string().min(10, "Nachricht muss mindestens 10 Zeichen haben"),
-});
-
-type ContactFormData = z.infer<typeof contactSchema>;
+export const metadata: Metadata = {
+  title: `Kontakt – ${PRODUCT_NAME} | Wir sind fuer Sie da`,
+  description: `Kontaktieren Sie ${PRODUCT_NAME} fuer Fragen, Feedback oder Support. E-Mail: ${CONTACT_EMAIL}. Wir antworten innerhalb von 24 Stunden.`,
+  openGraph: {
+    title: `Kontakt – ${PRODUCT_NAME}`,
+    description: `Nehmen Sie Kontakt mit uns auf. Wir beraten Sie gerne zu ${PRODUCT_NAME}.`,
+    type: "website",
+    locale: "de_DE",
+    url: `https://${PRODUCT_DOMAIN}/kontakt`,
+  },
+  alternates: {
+    canonical: `https://${PRODUCT_DOMAIN}/kontakt`,
+  },
+};
 
 export default function KontaktPage() {
-  const [submitted, setSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
-
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<ContactFormData>({
-    resolver: zodResolver(contactSchema),
-  });
-
-  const onSubmit = async (data: ContactFormData) => {
-    setLoading(true);
-    try {
-      await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
-      setSubmitted(true);
-    } catch {
-      setSubmitted(true);
-    } finally {
-      setLoading(false);
-    }
-  };
-
   return (
-    <div className="py-16 md:py-20">
-      <div className="container-custom max-w-4xl">
-        <Breadcrumbs items={[{ label: "Kontakt", href: "/kontakt" }]} />
+    <main className="min-h-screen">
+      {/* Hero */}
+      <section className="px-6 py-16 lg:py-20 lg:px-8">
+        <div className="mx-auto max-w-7xl text-center">
+          <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
+            Wir sind fuer Sie da
+          </h1>
+          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+            Haben Sie Fragen zu {PRODUCT_NAME}? Wir freuen uns auf Ihre Nachricht
+            und antworten innerhalb von 24 Stunden.
+          </p>
+        </div>
+      </section>
 
-        <div className="grid lg:grid-cols-2 gap-16">
-          <div>
-            <h1 className="heading-hero mb-4">Kontakt</h1>
-            <p className="text-lg text-muted-foreground mb-8">
-              Demo anfragen, Beratungsgespräch buchen oder direkt schreiben. Wir
-              antworten innerhalb von 24 Stunden.
-            </p>
+      {/* Form + Sidebar */}
+      <section className="px-6 pb-20 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid gap-12 lg:grid-cols-5">
+            {/* Contact Form */}
+            <div className="lg:col-span-3">
+              <div className="rounded-2xl border bg-card p-6 sm:p-8 shadow-sm">
+                <h2 className="text-2xl font-semibold mb-1">Nachricht senden</h2>
+                <p className="text-muted-foreground mb-6">
+                  Fuellen Sie das Formular aus und wir melden uns innerhalb von 24 Stunden bei Ihnen.
+                </p>
+                <ContactForm />
+              </div>
+            </div>
 
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                  <Mail className="h-5 w-5 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold mb-1">E-Mail</h3>
-                  <p className="text-muted-foreground text-sm">
-                    hallo@auditready.de
-                  </p>
+            {/* Sidebar */}
+            <div className="lg:col-span-2 space-y-6">
+              {/* Kontaktdaten */}
+              <div className="rounded-2xl border bg-card p-6 shadow-sm">
+                <h2 className="text-lg font-semibold mb-5">Kontaktdaten</h2>
+                <div className="space-y-5">
+                  <div className="flex gap-3">
+                    <svg className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    <div>
+                      <p className="font-medium text-sm">E-Mail</p>
+                      <a
+                        href={`mailto:${CONTACT_EMAIL}`}
+                        className="text-primary hover:underline text-sm"
+                      >
+                        {CONTACT_EMAIL}
+                      </a>
+                    </div>
+                  </div>
+                  <div className="flex gap-3">
+                    <svg className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    <div>
+                      <p className="font-medium text-sm">Anschrift</p>
+                      <p className="text-sm text-muted-foreground">
+                        Jonas Krueger<br />
+                        Meisenweg 13<br />
+                        78465 Konstanz<br />
+                        Deutschland
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex gap-3">
+                    <svg className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <circle cx="12" cy="12" r="10" />
+                      <polyline points="12 6 12 12 16 14" />
+                    </svg>
+                    <div>
+                      <p className="font-medium text-sm">Reaktionszeit</p>
+                      <p className="text-sm text-muted-foreground">
+                        Wir antworten in der Regel<br />
+                        innerhalb von 24 Stunden
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                  <Clock className="h-5 w-5 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold mb-1">Antwortzeit</h3>
-                  <p className="text-muted-foreground text-sm">
-                    Werktags innerhalb von 24 Stunden
-                  </p>
+
+              {/* Schnellzugriff */}
+              <div className="rounded-2xl border bg-card p-6 shadow-sm">
+                <h2 className="text-lg font-semibold mb-4">Schnellzugriff</h2>
+                <div className="space-y-1">
+                  <Link
+                    href="/preise"
+                    className="flex items-center gap-3 rounded-lg p-3 hover:bg-muted transition-colors"
+                  >
+                    <svg className="h-4 w-4 text-primary flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                    <div>
+                      <p className="font-medium text-sm">Preise & Pakete</p>
+                      <p className="text-xs text-muted-foreground">Transparente Preisgestaltung</p>
+                    </div>
+                  </Link>
+                  <Link
+                    href="/blog"
+                    className="flex items-center gap-3 rounded-lg p-3 hover:bg-muted transition-colors"
+                  >
+                    <svg className="h-4 w-4 text-primary flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                    <div>
+                      <p className="font-medium text-sm">Blog & Wissen</p>
+                      <p className="text-xs text-muted-foreground">Fachartikel und Anleitungen</p>
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
-
-          <div className="bg-card border rounded-2xl p-8">
-            {submitted ? (
-              <div className="text-center py-8">
-                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                  <Mail className="h-8 w-8 text-primary" />
-                </div>
-                <h2 className="text-xl font-semibold mb-2">
-                  Nachricht erhalten!
-                </h2>
-                <p className="text-muted-foreground">
-                  Wir melden uns innerhalb von 24 Stunden bei Ihnen.
-                </p>
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
-                <div>
-                  <Label htmlFor="name">Name *</Label>
-                  <Input id="name" {...register("name")} className="mt-1.5" />
-                  {errors.name && (
-                    <p className="text-destructive text-xs mt-1">
-                      {errors.name.message}
-                    </p>
-                  )}
-                </div>
-                <div>
-                  <Label htmlFor="email">E-Mail *</Label>
-                  <Input
-                    id="email"
-                    type="email"
-                    {...register("email")}
-                    className="mt-1.5"
-                  />
-                  {errors.email && (
-                    <p className="text-destructive text-xs mt-1">
-                      {errors.email.message}
-                    </p>
-                  )}
-                </div>
-                <div>
-                  <Label htmlFor="company">Unternehmen</Label>
-                  <Input
-                    id="company"
-                    {...register("company")}
-                    className="mt-1.5"
-                  />
-                </div>
-                <div>
-                  <Label htmlFor="message">Nachricht *</Label>
-                  <Textarea
-                    id="message"
-                    rows={5}
-                    {...register("message")}
-                    className="mt-1.5"
-                    placeholder="Beschreiben Sie Ihr Anliegen..."
-                  />
-                  {errors.message && (
-                    <p className="text-destructive text-xs mt-1">
-                      {errors.message.message}
-                    </p>
-                  )}
-                </div>
-                <Button
-                  type="submit"
-                  disabled={loading}
-                  className="w-full bg-primary hover:bg-primary/90"
-                >
-                  {loading ? "Wird gesendet..." : "Nachricht senden"}
-                </Button>
-                <p className="text-xs text-muted-foreground text-center">
-                  Mit dem Absenden stimmen Sie unserer{" "}
-                  <a href="/datenschutz" className="underline">
-                    Datenschutzerklärung
-                  </a>{" "}
-                  zu.
-                </p>
-              </form>
-            )}
-          </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }
