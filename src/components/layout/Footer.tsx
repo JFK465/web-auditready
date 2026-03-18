@@ -45,11 +45,13 @@ export function Footer() {
             ) : (
               <form onSubmit={handleNewsletter} className="flex gap-2">
                 <Input
+                  id="newsletter-email"
                   type="email"
                   placeholder="ihre@email.de"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
+                  aria-label="E-Mail für Newsletter"
                   className="bg-background/10 border-background/20 text-background placeholder:text-background/50 flex-1"
                 />
                 <Button
