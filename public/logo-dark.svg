@@ -1,18 +1,3 @@
-<!-- @license lucide-static v0.469.0 - ISC -->
-<svg role="img" aria-label="AuditReady Logo"
-  class="lucide lucide-hard-hat"
-  xmlns="http://www.w3.org/2000/svg"
-  width="40"
-  height="40"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="#FFFFFF"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5" />
-  <path d="M14 6a6 6 0 0 1 6 6v3" />
-  <path d="M4 15v-3a6 6 0 0 1 6-6" />
-  <rect x="2" y="15" width="20" height="4" rx="1" />
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" role="img" aria-label="AuditReady Logo">
+  <image width="40" height="40" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAPoAAAD6AG1e1JrAAACXklEQVR4nO2XTWsUQRCGd9ckgt+ih6Ae9TcYyMGTiCJIUBSDeBIFESMqevEHePDgBxHFg0QFRX+A4tWTHuJFoviFCp48i3HXfR/ppRrKIbOT0Z7Ew7xQDDvT0/V0VU13baNRq1atWv+vgKZZC1jirLkYIB5gIFwb+eN7wAsKmQMyCKwHtkjaBhwBRt3zVqURjRMDaySNAPuAc8BN4DEwLekr0MEk6RfwBNgeo1gZaEilXSec8zx17Xk3sgLPgDFgKC44KaiLwDjQNqfReccBxfu2jj9Ag6aBw8CyCJoE0IGGlW8E9gJXgTcONE8eNI57BRwFViQFnCPlB8xh2wCKrJPJwA4/XwqwUORDwHL7fXAeNRkVoQLkRWCPLXBd8nS7mtwp6Yul7HWBzQBvJb0AVgObgdmwC7h5m/+6zWwALgHXrQZvAY+A+8CDEjZpwEEPU0bseImU9lP8smeSpNgBnrSJZzPbS7ek/bB5pvz8KQAnPGCEVEmbA7CVCvBEohR37Ho7VQR79SFpk30k14DLwA1Jd4E7JWzKPrLw7kiSCPaJ6G7gG/AO+FhgH4DPkl4Cw37hqY+6QXeWjv/lRn0FOBYykhTU7YfxqNvvnKrIbCFxbNAumyddUxsOeGCrpFPA80x0ilqw3jhJn+z9NF2Nq7kxa0x/mmO5LkVFYKEGgTPA2iRgJRtW2f2228RjxMJ5fTZ05FU1rLH2hkO7L+m8tftPgffA92yzGlMZTh9JqyoBm48kLbUmdhQ4BFyQdA84DaxcUDDnaMCsr0MWI2I5EM0MeLV/M2vVqlWrkVy/AcdzuQCVb+jxAAAAAElFTkSuQmCC" />
 </svg>
