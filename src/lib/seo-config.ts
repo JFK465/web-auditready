@@ -3,7 +3,6 @@ export const siteConfig = {
   description:
     "AuditReady digitalisiert Ihr WPK-System nach EN 1090: Compliance-Score, automatische Gap-Analyse und Ein-Klick Audit-Paket. Kostenlos testen. DSGVO-konform.",
   url: "https://werkseigene-produktionskontrolle.de",
-  appUrl: "https://app.werkseigene-produktionskontrolle.de",
   ogImage: "/og.png",
   keywords: [
     "WPK Software Metallbau",
