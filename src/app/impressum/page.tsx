@@ -21,11 +21,13 @@ export default function ImpressumPage() {
               Angaben gemäß § 5 TMG
             </h2>
             <p>
-              AuditReady GmbH (in Gründung)
+              Jonas Krüger
               <br />
-              [Straße und Hausnummer]
+              Einzelunternehmen
               <br />
-              [PLZ Ort]
+              Meisenweg 13
+              <br />
+              78465 Konstanz
               <br />
               Deutschland
             </p>
@@ -40,7 +42,11 @@ export default function ImpressumPage() {
             <h2 className="text-xl font-semibold text-foreground mb-3">
               Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
             </h2>
-            <p>[Name des Verantwortlichen]</p>
+            <p>
+              Jonas Krüger
+              <br />
+              Meisenweg 13, 78465 Konstanz
+            </p>
           </section>
           <section>
             <h2 className="text-xl font-semibold text-foreground mb-3">

@@ -23,8 +23,8 @@ export default function DatenschutzPage() {
             </h2>
             <p>
               Verantwortlich für die Datenverarbeitung auf dieser Website ist
-              die AuditReady GmbH (in Gründung). Kontakt:
-              hallo@werkseigene-produktionskontrolle.de
+              Jonas Krüger, Einzelunternehmen, Meisenweg 13, 78465 Konstanz.
+              Kontakt: hallo@werkseigene-produktionskontrolle.de
             </p>
           </section>
 
